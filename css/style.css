@@ -1,0 +1,75 @@
+/* Css Properties */
+:root {
+    --color-primary: rgb(290, 91, 15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+
+}
+
+::selection {}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+/* ///////////////////////// */
+/* Header */
+/* ///////////////////////// */
+.header {
+    height: 100vh;
+    background-image:
+        linear-gradient(to right bottom, rgba(0, 0, 0, 0.678), rgba(26, 25, 25, 0.685)),
+        url('../images/header.jpg');
+    background-size: cover;
+
+}
+
+/* Navbar */
+
+.navbar  {
+    padding-top: 1.5rem;
+}
+.header .navbar-brand {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 0 3rem;
+    margin-left: 3rem;
+    border: 2px solid orangered;
+    border-radius: .5rem;
+}
+
+
+.header .nav-item .nav-link{
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+.header .navbar-nav .nav-link.active{
+    color: var(--color-primary);
+}
+
+.header .navbar-nav .nav-link:hover {
+    color: var(--color-primary);
+}
+
+.header .navbar-nav .nav-link:focus {
+    color: var(--color-primary);
+}
