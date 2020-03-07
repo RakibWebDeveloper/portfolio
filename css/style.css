@@ -24,6 +24,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -427,6 +428,10 @@ body {
     padding: .5rem 1rem;
     margin: .5rem 0;
     font-size: 1.5rem;
+}
+
+.more-projects {
+   margin: 1rem 45.5rem;
 }
 
 /* ///////////////// */
