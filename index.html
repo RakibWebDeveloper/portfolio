@@ -199,139 +199,30 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="large-heading">My <span class="colored-text">Portfolio</span></h1>
             <p class="title-heading">A FEW RECENT PROJECTS. WANT TO SEE MORE? EMAIL ME.</p>
             <!-- Projects -->
-            <div class="row projects d-flex justify-content-center align-items-center">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/shopping-cart.jpg" alt="">
-                        <div class="project-name">
-                            <p>Shopping Cart</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/job-portal.jpg" alt="">
-                        <div class="project-name">
-                            <p>Job Portal</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/blog-project.jpg" alt="">
-                        <div class="project-name">
-                            <p>Blog Project Portal</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/ecommerce.jpg" alt="">
-                        <div class="project-name">
-                            <p>Ecommerce Site</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/calculator.jpg" alt="">
-                        <div class="project-name">
-                            <p>Calculator</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/todo.jpg" alt="">
-                        <div class="project-name">
-                            <p>Todo List</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/todo.jpg" alt="">
-                        <div class="project-name">
-                            <p>Todo List</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/todo.jpg" alt="">
-                        <div class="project-name">
-                            <p>Todo List</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="project-item">
-                        <img class="img-responsive" src="./images/todo.jpg" alt="">
-                        <div class="project-name">
-                            <p>Todo List</p>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">
-                                <a>View Code</a>
-                                <a>Live Preview</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <ul class="list-inline text-center text-uppercase my-4">
+                <li class="list-inline-item project-list-item active-item" data-filter="all">All <span class="mx-2 mx-md-5 text-muted">/</span></li>
+                <li class="list-inline-item project-list-item" data-filter="javascript">JavaScript <span class="mx-2 mx-md-5 text-muted">/</span></li>
+                <li class="list-inline-item project-list-item" data-filter="django">Django <span class="mx-2 mx-md-5 text-muted">/</span></li>
+                <li class="list-inline-item project-list-item" data-filter="react">ReactJs </li>
+            </ul>
+            <div class="my-5 d-flex flex-wrap justify-content-center">
+                <div class="filter django"><img src="./images/blog-project.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter javascript"><img src="./images/calculator.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter javascript"><img src="./images/todo.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter django"><img src="./images/ecommerce.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter javascript"><img src="./images/calculator.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter django"><img src="./images/shopping-cart.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter django"><img src="./images/job-portal.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter javascript"><img src="./images/todo.jpg" width="300px" alt="blog-project django"></div>
+                <div class="filter react"><img src="./images/todo.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter react"><img src="./images/todo.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter django"><img src="./images/job-portal.jpg" width="300px" alt="blog-project"></div>
+                <div class="filter react"><img src="./images/shopping-cart.jpg" width="300px" alt="blog-project"></div>
             </div>
-            <a class="btn primary more-projects" href=""><span>See More Projects</span> </a>
         </div>
     </section>
     <!-- Portfolio Section -->
@@ -359,7 +250,11 @@
             </div>
     </section>
     <!-- End Contact Section -->
-
+<!-- Footer section -->
+<footer>
+    <p>©<span><a class="name" href="">Rakib</a></span> 2020, all rights reserved.</p>
+</footer>
+<!-- End footer section -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
