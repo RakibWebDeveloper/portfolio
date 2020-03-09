@@ -354,6 +354,100 @@ body {
     padding-left: 1rem;
 }
 
+/* Skill  */
+.bar {
+    margin: 1.2rem 0;
+}
+
+.fill {
+    height: 1.2rem;
+    background-color: var(--color-primary);
+    border-radius: 1px;
+    display: inline-block;
+}
+
+#html {
+    width: 80%;
+    animation: html 2s ease-out;
+    animation-delay: 1s;
+}
+
+#css {
+    width: 60%;
+    animation: css 2s ease-out;
+    animation-delay: 1s;
+}
+#python {
+    width: 50%;
+    animation: python 2s ease-out;
+    animation-delay: 1s;
+}
+#javascript {
+    width: 30%;
+    animation: javascript 2s ease-out;
+    animation-delay: 1s;
+}
+#react {
+    width: 30%;
+    animation: react 2s ease-out;
+    animation-delay: 1s;
+}
+#django {
+    width: 55%;
+    animation: django 2s ease-out;
+    animation-delay: 1s;
+}
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+}
+@keyframes python {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes django {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 55%;
+    }
+}
 
 /* Portfolio Section */
 #portfolio {
@@ -390,16 +484,19 @@ body {
 /* Contact section */
 
 #contact {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.9rem;
 }
 
+#contact .title-heading {
+    margin-bottom: -2rem;
+}
 
 #contact .title-heading::before {
-    left: 42rem;
+    left: 55rem;
 }
 
 #contact .title-heading::after {
-    right: 42rem;
+    right: 55rem;
 }
 
 #contact .row {
