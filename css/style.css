@@ -261,7 +261,7 @@ body {
 
 .my-image {
     position: relative;
-    width: 35rem;
+    width: 42rem;
 }
 
 .my-image::before {
@@ -453,58 +453,68 @@ body {
 
 /* Contact section */
 
-#contact {}
-
-#contact .row {
-    margin-top: 5rem;
+#contact {
+    margin-bottom: 5rem;
 }
 
+
 #contact .title-heading::before {
-    left: 25rem;
+    left: 42rem;
 }
 
 #contact .title-heading::after {
-    right: 25rem;
+    right: 42rem;
 }
 
-.contact-item {
-    margin: .5rem 0;
+#contact .row {
+    margin-top: 5rem;
+
+    background: linear-gradient(105deg, rgba(21, 31, 32, 1) 0%, rgba(21, 31, 32, .95) 50%,
+            transparent 30%), url(../images/form-img.jpeg) center center no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
 }
 
-#contact h6 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+#contact .col-lg-4 {
+    margin: 0 6rem;
 }
 
-#contact p {
-    font-size: 1.4rem;
-    font-weight: 400;
+#contact .btn {
+    margin-top: 4rem;
 }
 
-#contact i {
-    color: var(--color-primary);
-    margin-right: 1rem;
+#contact input {
+    background-color: transparent;
+    border-color: transparent;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    border-bottom: 2px solid var(--color-primary);
+    border-radius: 0;
+    transition: all .8s;
 }
 
-#contact .social-profile span{
-    border-radius: 50%;
-    color: var(--color-primary);
+#contact input:focus {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: white;
+    border-bottom: 2px solid gray;
+
 }
 
-#contact .social-profile .fa{
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    line-height: 36px;
-    border: 1px solid var(--color-primary);
-    border-radius: 2px;
-    text-align: center;
-    background: transparent;
-    transition: 0.3s;
+.label {
+    color: #777777;
+    display: block;
+    margin-top: -8rem;
+    margin-left: 6px;
+    font-size: 1.3rem;
+    transition: all .3s;
 }
 
-#contact .social-profile .fa:hover {
-    transform: rotate(360deg);
+input:placeholder-shown+label {
+    transform: translate(20px, 20px);
+    opacity: 0;
+    visibility: hidden;
 }
 
 /* ///////////////// */
@@ -571,8 +581,13 @@ body {
         text-align: left;
     }
 
-}
+    #contact .row {
 
+
+        background: linear-gradient(105deg, rgba(21, 31, 32, 1), rgba(21, 31, 32, .95));
+
+    }
+}
 
 @media screen and (max-width: 700px) {
     .projects {
