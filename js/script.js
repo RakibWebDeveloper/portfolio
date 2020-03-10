@@ -68,9 +68,73 @@ function init() {
 
 $(document).ready(function () {
 
+
+
+
+  //animation scroll js
+  var html_body = $('html, body');
+
+  $('nav a').on('click', function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+      if (target.length) {
+        $(target).addClass('padding-top');
+        html_body.animate({
+          scrollTop: target.offset().top - 0
+        }, 10);
+
+        return false;
+      }
+    }
+  });
+
+  // active navbar
+  // var sections = $('section');
+  // var nav = $('nav');
+  // var nav_height = nav.outerHeight();
+
+  // $(window).on('scroll', function () {
+  //   var cur_pos = $(this).scrollTop();
+
+  //   sections.each(function () {
+  //     var top = $(this).offset().top - nav_height;
+  //     var bottom = top + $(this).outerHeight();
+
+  //     if (cur_pos >= top && cur_pos <= bottom) {
+  //       nav.find('a').removeClass('nav-active');
+  //       sections.removeClass('nav-active');
+
+  //       $(this).addClass('nav-active');
+  //       nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('nav-active');
+  //     }
+
+  //     if (cur_pos === 0) {
+  //       nav.find('a').removeClass('nav-active');
+  //       sections.removeClass('nav-active');
+
+  //       $('#home').addClass('nav-active');
+  //       nav.find('a[href="#home"]').addClass('nav-active');
+  //     }
+  //   });
+  // });
+
+
+
+
+
+
+
+
+
+
+
+
   // Nav button
 
-  $(".nav-button").click(function() {
+  $(".nav-button").click(function () {
     $(".nav-button").toggleClass("change");
   })
 
@@ -106,10 +170,10 @@ $(document).ready(function () {
   });
 
   // Navbar
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     let position = $(this).scrollTop();
     // console.log(position);
-    if(position >=200) {
+    if (position >= 200) {
       $('.navbar').addClass('custom-navbar');
     } else {
       $('.navbar').removeClass('custom-navbar');
@@ -117,10 +181,10 @@ $(document).ready(function () {
   })
 
   // Skill
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     let position = $(this).scrollTop();
     // console.log(position);
-    if(position >=1400) {
+    if (position >= 1400) {
       $('.h').attr('id', 'html');
       $('.c').attr('id', 'css');
       $('.j').attr('id', 'javascript');
@@ -156,8 +220,9 @@ function sendMessage() {
     } else {
       console.log("Error")
     }
-    location.reload();
     e.preventDefault();
+    location.reload();
   })
+
 }
 sendMessage();
