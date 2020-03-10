@@ -408,37 +408,37 @@ body {
 #html {
     width: 80%;
     animation: html 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 #css {
     width: 60%;
     animation: css 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 #python {
     width: 50%;
     animation: python 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 #javascript {
     width: 30%;
     animation: javascript 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 #react {
     width: 30%;
     animation: react 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 #django {
     width: 55%;
     animation: django 2s ease-out;
-    animation-delay: 1s;
+    /* animation-delay: 1s; */
 }
 
 @keyframes html {

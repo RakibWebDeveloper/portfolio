@@ -108,11 +108,32 @@ $(document).ready(function () {
   // Navbar
   $(window).scroll(function() {
     let position = $(this).scrollTop();
-    console.log(position);
+    // console.log(position);
     if(position >=200) {
       $('.navbar').addClass('custom-navbar');
     } else {
       $('.navbar').removeClass('custom-navbar');
+    }
+  })
+
+  // Skill
+  $(window).scroll(function() {
+    let position = $(this).scrollTop();
+    // console.log(position);
+    if(position >=1400) {
+      $('.h').attr('id', 'html');
+      $('.c').attr('id', 'css');
+      $('.j').attr('id', 'javascript');
+      $('.d').attr('id', 'django');
+      $('.r').attr('id', 'react');
+      $('.p').attr('id', 'python');
+    } else {
+      $('.h').attr('id', '');
+      $('.c').attr('id', '');
+      $('.j').attr('id', '');
+      $('.d').attr('id', '');
+      $('.p').attr('id', '');
+      $('.r').attr('id', '');
     }
   })
 })
@@ -135,6 +156,7 @@ function sendMessage() {
     } else {
       console.log("Error")
     }
+    location.reload();
     e.preventDefault();
   })
 }
