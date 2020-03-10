@@ -51,6 +51,7 @@ body {
 
 .navbar {
     padding: 0 3rem;
+    background-color: rgba(0, 0, 0, 0.3);
     transition: all .4s;
 }
 
@@ -84,7 +85,7 @@ body {
 }
 
 .custom-navbar {
-    background-color: rgba(0, 0, 0, 0.288);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: .3rem 3rem;
 }
 
@@ -724,7 +725,7 @@ footer {
     }
 
     .main-box {
-        padding-top: 2rem;
+        padding-top: 12rem;
         padding-bottom: 5rem;
     }
 
