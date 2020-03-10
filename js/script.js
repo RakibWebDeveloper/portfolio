@@ -67,16 +67,18 @@ function init() {
 }
 
 $(document).ready(function() {
+
+  $('.filter').not('.django').hide(300);
+  $('.filter').not('.react').hide(300);
+  $('.filter').not('.bootstrap').hide(300);
+  $('.filter').filter('.javascript').show(300);
+
   $('.project-list-item').click(function() {
     let value = $(this).attr("data-filter");
-    // console.log(value);
+    console.log(value);
 
-    if(value === "all") {
-      $('.filter').show(300);
-    } else {
       $('.filter').not('.' + value).hide(300);
       $('.filter').filter('.' + value).show(300);
-    }
   });
   $('.project-list-item').click(function() {
     $(this).addClass('active-item').siblings().removeClass('active-item');

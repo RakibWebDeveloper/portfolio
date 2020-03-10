@@ -86,7 +86,7 @@ body {
 
 /* Main Box */
 .main-box {
-    margin: 15rem 0;
+    margin: 15rem 0 0 0;
 }
 
 .image-box {
@@ -261,7 +261,7 @@ body {
 
 .my-image {
     position: relative;
-    width: 42rem;
+    width: 35rem;
 }
 
 .my-image::before {
@@ -301,13 +301,13 @@ body {
 }
 
 .experience {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .title-section {
     text-transform: uppercase;
-    font-size: 2.3rem;
-    margin-bottom: 2rem;
+    font-size: 2.7rem;
+    margin: 3rem 0;
 }
 
 .resume-items .card {
@@ -502,6 +502,8 @@ body {
     bottom: 0;
     left: 0;
     padding: 1.25rem;
+
+    transition: all .3s;
 }
 
 .heading {
@@ -523,6 +525,10 @@ body {
 .heading:hover {
     opacity: 1;
     text-decoration: none;
+}
+
+.img-overlay:hover {
+    background-color: #22222279;
 }
 
 /* Contact section */
@@ -552,12 +558,16 @@ body {
     padding: 5rem 0;
 }
 
-#contact .col-lg-4 {
+/* #contact .col-lg-4 {
     margin: 0 6rem;
-}
+} */
 
 #contact .btn {
     margin-top: 4rem;
+}
+
+.contact-form {
+    margin: 0 4rem;
 }
 
 #contact input {
@@ -694,7 +704,31 @@ footer {
 }
 
 @media screen and (max-width: 700px) {
+
+    .text-box h1 {
+        font-size: 3rem;
+        letter-spacing: 0;
+    }
+    .text-box h3 {
+        font-size: 1.6rem;
+        letter-spacing: 0;
+    }
+
+    .contact-form {
+        margin: 0 2rem;
+    }
+
     .projects {
         margin: 0 auto;
+    }
+
+    .my-image {
+        border: 6px solid var(--color-primary);
+
+    }
+
+    .my-image::before {
+        display: none;
+
     }
 }
