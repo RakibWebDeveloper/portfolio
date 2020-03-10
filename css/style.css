@@ -50,15 +50,16 @@ body {
 /* Navbar */
 
 .navbar {
-    padding-top: 1.5rem;
-    margin: 0 3rem;
+    padding: 0 3rem;
+    transition: all .4s;
 }
 
 .header .navbar-brand {
     font-size: 3rem;
     color: #ffffff;
-    border: 2px solid var(--color-primary);
-    border-radius: .2rem;
+    /* border-bottom: 2px solid var(--color-primary);
+    border-left: 2px solid var(--color-primary);
+    border-radius: 0px 0px 0px 3rem; */
     padding: 0 1rem;
 }
 
@@ -82,11 +83,49 @@ body {
     color: var(--color-primary);
 }
 
+.custom-navbar {
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: .3rem 3rem;
+}
+
+.nav-button {
+    border: 1px solid gray;
+    box-shadow: transparent;
+}
+
+.nav-button:focus {
+    border: 1px solid gray;
+
+    outline: transparent;
+    box-shadow: transparent;
+}
+
+.change .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.change .line2 {
+    opacity: 0;
+}
+
+.change .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+.line1,
+.line2,
+.line3 {
+    width: 2.3rem;
+    height: .3rem;
+    margin: .5rem;
+    transition: all .4s;
+}
 
 
 /* Main Box */
 .main-box {
-    margin: 15rem 0 0 0;
+    padding: 22rem 0 0 0;
 }
 
 .image-box {
@@ -685,7 +724,7 @@ footer {
     }
 
     .main-box {
-        margin-top: 2rem;
+        padding-top: 2rem;
         padding-bottom: 5rem;
     }
 

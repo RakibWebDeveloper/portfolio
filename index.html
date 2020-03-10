@@ -28,13 +28,16 @@
 <body>
     <section id="home" class="header">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar  navbar-expand-lg fixed-top ">
             <a class="navbar-brand" href="#">Rakib</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <div class="bg-light line1"></div>
+                <div class="bg-light line2"></div>
+                <div class="bg-light line3"></div>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item  ">
                         <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -67,9 +70,11 @@
                     <p class="">I'm a Full Stack Web Developer based in Dhaka, Bangladesh. I strives to build immersive
                         and beautiful web applications using React as frontend and Django Rest Framework as backend.</p>
 
-                    <a class="btn primary mb-sm-0 mb-3" href=""><span><i class="fa fa-user"></i>More About me</span>
+                    <a class="btn primary mb-sm-0 mb-3" href="#about"><span><i class="fa fa-user"></i>More About
+                            me</span>
                     </a>
-                    <a class="btn secondary" href=""><span><i class="fa fa-suitcase"></i> Portfolio</span> </a>
+                    <a class="btn secondary" href="#portfolio"><span><i class="fa fa-suitcase"></i> Portfolio</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -100,7 +105,7 @@
                             <p>Last Name: <span>Rakib</span></p>
                             <p>Birth Date: <span>13 Aug 1997</span></p>
                             <p>Nationality: <span>Bangladeshi</span></p>
-                            <p>Experience: <span>1 year</span></p>
+                            <p>Experience: <span>0 year</span></p>
                             <p>Address: <span>Rajshahi</span></p>
                         </div>
                         <div class="second-box">
@@ -372,7 +377,7 @@
             <div class="row">
                 <div class="col-lg-5 pb-4">
                     <div class="alert-parent">
-                        
+
                     </div>
                     <form class="contact-form" id="send-message">
                         <div class="form-group py-4">
@@ -380,15 +385,18 @@
                             <label for="name" class="label">Name</label>
                         </div>
                         <div class="form-group py-4">
-                            <input required type="email" class="form-control my-5 p-2" placeholder="Email Address" id="email">
+                            <input required type="email" class="form-control my-5 p-2" placeholder="Email Address"
+                                id="email">
                             <label for="email" class="label">Email Address</label>
                         </div>
 
                         <div class="form-group py-4">
-                            <input required type="text" class="form-control my-5 p-2"  placeholder="Message" id="message">
+                            <input required type="text" class="form-control my-5 p-2" placeholder="Message"
+                                id="message">
                             <label for="name" class="label">Message</label>
                         </div>
-                        <button class="btn primary btn-block" id="send-btn"><span><i class="far fa-paper-plane"></i> Send Message</span>
+                        <button class="btn primary btn-block" id="send-btn"><span><i class="far fa-paper-plane"></i>
+                                Send Message</span>
                         </button>
                     </form>
                 </div>

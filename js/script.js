@@ -68,6 +68,12 @@ function init() {
 
 $(document).ready(function () {
 
+  // Nav button
+
+  $(".nav-button").click(function() {
+    $(".nav-button").toggleClass("change");
+  })
+
   $('.filter').not('.django').hide(300);
   $('.filter').not('.react').hide(300);
   $('.filter').not('.bootstrap').hide(300);
@@ -98,6 +104,17 @@ $(document).ready(function () {
       scrollTop: 0
     }, 800);
   });
+
+  // Navbar
+  $(window).scroll(function() {
+    let position = $(this).scrollTop();
+    console.log(position);
+    if(position >=200) {
+      $('.navbar').addClass('custom-navbar');
+    } else {
+      $('.navbar').removeClass('custom-navbar');
+    }
+  })
 })
 
 const myForm = document.getElementById("send-message");
