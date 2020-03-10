@@ -85,15 +85,40 @@ $(document).ready(function () {
   });
 
   // Scroll Top
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 40){
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 40) {
       $('#topBtn').fadeIn();
-    } else{
+    } else {
       $('#topBtn').fadeOut();
     }
   });
 
-  $("#topBtn").click(function(){
-    $('html ,body').animate({scrollTop : 0},800);
+  $("#topBtn").click(function () {
+    $('html ,body').animate({
+      scrollTop: 0
+    }, 800);
   });
 })
+
+const myForm = document.getElementById("send-message");
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const message = document.getElementById("message");
+const alertParent = document.querySelector(".alert-parent");
+
+function sendMessage() {
+  myForm.addEventListener("submit", e => {
+    if (name !== "" && email !== "" && message !== "") {
+      const alert = `<div class="sent-alert">
+      Message Sent Successfully
+      </div>`;
+      alertParent.innerHTML = alert;
+      setTimeout(() => alertParent.remove(), 3000);
+      myForm.reset();
+    } else {
+      console.log("Error")
+    }
+    e.preventDefault();
+  })
+}
+sendMessage();

@@ -88,12 +88,12 @@
             <p class="title-heading">I DESIGN AND CODE Interactive THINGS, AND I LOVE WHAT I DO.</p>
             <!-- My info -->
             <div class="row d-flex align-items-center justify-content-center mx-auto">
-                <div class="col-xl-5 ml-lg-5 ml-0">
+                <div class="col-xl-5  col-lg-6">
                     <div class="my-image">
                         <img src="./images/rakib.png" class="img-fluid" alt="">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-7 col-lg-6">
                     <div class="info-box d-flex">
                         <div class="first-box">
                             <p>First Name: <span>Abdur</span></p>
@@ -235,7 +235,7 @@
             <h1 class="large-heading">My <span class="colored-text">Portfolio</span></h1>
             <p class="title-heading">A FEW RECENT PROJECTS. WANT TO SEE MORE? EMAIL ME.</p>
             <!-- Projects -->
-            <ul class="list-inline text-center text-uppercase my-4">
+            <ul class="list-inline text-center text-uppercase my-5">
                 <!-- <li class="list-inline-item project-list-item active-item" data-filter="all">All <span
                         class="mx-2 mx-md-5 text-muted">/</span></li> -->
                 <li class="list-inline-item project-list-item active-item" data-filter="javascript">JavaScript <span
@@ -371,18 +371,25 @@
             <p class="title-heading ">Please feel free to send message me.</p>
             <div class="row">
                 <div class="col-lg-5 pb-4">
-                    <form class="contact-form">
+                    <div class="alert-parent">
+                        
+                    </div>
+                    <form class="contact-form" id="send-message">
                         <div class="form-group py-4">
-                            <input type="text" class="form-control my-5 p-2" class="input" placeholder="Name">
+                            <input type="text" required class="form-control my-5 p-2" placeholder="Name" id="name">
                             <label for="name" class="label">Name</label>
                         </div>
                         <div class="form-group py-4">
-                            <input type="email" class="form-control my-5 p-2" class="input" placeholder="Email Address">
+                            <input required type="email" class="form-control my-5 p-2" placeholder="Email Address" id="email">
                             <label for="email" class="label">Email Address</label>
                         </div>
 
-                        <a class="btn primary btn-block" href=""><span><i class="fa fa-send"></i> Send Message</span>
-                        </a>
+                        <div class="form-group py-4">
+                            <input required type="text" class="form-control my-5 p-2"  placeholder="Message" id="message">
+                            <label for="name" class="label">Message</label>
+                        </div>
+                        <button class="btn primary btn-block" id="send-btn"><span><i class="far fa-paper-plane"></i> Send Message</span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -390,7 +397,7 @@
     <!-- End Contact Section -->
     <!-- Footer section -->
     <footer>
-        <p>©<span><a class="name" href="">Rakib</a></span> 2020, all rights reserved.</p>
+        <p>©<span><a class="name">Rakib</a></span> 2020, all rights reserved.</p>
     </footer>
     <!-- End footer section -->
 

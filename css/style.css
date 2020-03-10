@@ -217,7 +217,7 @@ body {
 /* About Section */
 #about {
     background-color: #222222;
-    padding: 5rem 0;
+    padding: 2rem 0 5rem 0;
 }
 
 #about .d-flex {
@@ -629,6 +629,40 @@ footer {
     color: white;
     border-radius: 2px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Scroll Top */
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--color-primary);
+    cursor: pointer;
+    padding: 15px;
+}
+
+.sent-alert {
+    position: absolute;
+    top: -20px;
+    left: 5.7rem;
+    background-color: #fa5b0f;
+    text-align: center;
+    padding: .8rem 1.5rem;
+    border-radius: 2px;
+}
+
+
+#contact row {
+    position: relative;
 }
 
 /* ///////////////// */
@@ -705,10 +739,15 @@ footer {
 
 @media screen and (max-width: 700px) {
 
+    .header {
+        min-height: 90vh;
+    }
+
     .text-box h1 {
         font-size: 3rem;
         letter-spacing: 0;
     }
+
     .text-box h3 {
         font-size: 1.6rem;
         letter-spacing: 0;
@@ -731,21 +770,11 @@ footer {
         display: none;
 
     }
+
+    /* Scroll Top */
+
+    #topBtn {
+        bottom: 20px;
+        right: 0;
+    }
 }
-
-/* Scroll Top */
-
-#topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: var(--color-primary);
-    cursor: pointer;
-    padding: 15px;
-  }
